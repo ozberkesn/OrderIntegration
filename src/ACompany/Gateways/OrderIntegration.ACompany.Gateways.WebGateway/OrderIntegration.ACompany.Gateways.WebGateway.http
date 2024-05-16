@@ -1,0 +1,6 @@
+@OrderIntegration.ACompany.Gateways.WebGateway_HostAddress = http://localhost:5001
+
+GET {{OrderIntegration.ACompany.Gateways.WebGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

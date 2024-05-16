@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderIntegration.ACompany.Services.OrderManager.DomainCore\OrderIntegration.ACompany.Services.OrderManager.DomainCore.csproj" />
+    <ProjectReference Include="..\OrderIntegration.ACompany.Services.OrderManager.Domain\OrderIntegration.ACompany.Services.OrderManager.Domain.csproj" />
+    <ProjectReference Include="..\OrderIntegration.ACompany.Services.OrderManager.Infrastructure\OrderIntegration.ACompany.Services.OrderManager.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
