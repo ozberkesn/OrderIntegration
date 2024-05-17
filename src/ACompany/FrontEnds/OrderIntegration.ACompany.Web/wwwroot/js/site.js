@@ -1,4 +1,22 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function orderDelivered(orderId) {
+    if (confirm('Siparişin Statüsü Teslim Edildi Olarak Değiştirilecektir. Emin Misiniz?')) {
+        $.ajax({
+            url: "/OrderManagement/Delivered/" + orderId,
+            type: "GET",
+            success: function (response) {
+                if (response.isSuccessful) {
+                    alert("Teslim edildi olarak güncellendi!");
+                    $('.order-record[data-id="' + response.id + '"]').remove();
+                }
+                else {
+                    alert(response.error);
+                }
 
-// Write your JavaScript code.
+            },
+            error: function (xhr, status, error) {
+                alert("Bir hata oluştu: " + error);
+            }
+        });
+    }
+    
+}
