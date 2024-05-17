@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Shared\OrderIntegration.ACompany.Shared\OrderIntegration.ACompany.Shared.csproj" />
     <ProjectReference Include="..\OrderIntegration.ACompany.Services.OrderManager.Domain\OrderIntegration.ACompany.Services.OrderManager.Domain.csproj" />
     <ProjectReference Include="..\OrderIntegration.ACompany.Services.OrderManager.Infrastructure\OrderIntegration.ACompany.Services.OrderManager.Infrastructure.csproj" />
