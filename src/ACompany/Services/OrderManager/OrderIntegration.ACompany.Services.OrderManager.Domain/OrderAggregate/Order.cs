@@ -15,7 +15,7 @@ namespace OrderIntegration.ACompany.Services.OrderManager.Domain.OrderAggregate
         public ICollection<OrderItem> OrderItems => _orderItems;
         public Order()
         {
-            
+            CreatedDate = DateTime.Now;
         }
         public Order(int customerId)
         {

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using OrderIntegration.BCompany.Bussiness.Abstract;
 using OrderIntegration.BCompany.Bussiness.Concrete;
+using OrderIntegration.BCompany.DataAccess;
 using OrderIntegration.BCompany.DataAccess.Context;
 using OrderIntegration.BCompany.DataAccess.Repositories.OrderRepositories;
 using SoapCore;
@@ -20,14 +21,21 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderSoapService, OrderSoapService>();
 builder.Services.AddSoapCore();
 
-
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.EnsureSeedData(services);
+}
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.MapControllers();
 app.UseRouting();

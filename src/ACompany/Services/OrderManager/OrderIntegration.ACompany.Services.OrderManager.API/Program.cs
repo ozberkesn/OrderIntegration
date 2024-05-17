@@ -20,6 +20,12 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Updat
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.EnsureSeedData(services);
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
