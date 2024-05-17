@@ -17,6 +17,8 @@ namespace OrderIntegration.BCompany.Bussiness.Concrete
             var result =  await _orderService.GetOrdersByDate(date);
             var response = result.Select(s => new OrderDto
             {
+                CreatedDate = date,
+                Id = s.Id,
                 OrderItems = s.OrderItems.Select(a => new OrderItemDto
                 {
                     ItemName = a.ItemName,
@@ -24,22 +26,6 @@ namespace OrderIntegration.BCompany.Bussiness.Concrete
                 }).ToList(),
 
             }).ToList();
-
-            response.Add(new OrderDto
-            {
-                CreatedDate = DateTime.Now,
-                Id= 1,
-                OrderItems = new List<OrderItemDto>
-                {
-                    
-                    new OrderItemDto
-                    {
-                        ItemName = "Test",
-                        Quantity = 1
-                    }
-                }
-            });
-
             return response;
         }
     }

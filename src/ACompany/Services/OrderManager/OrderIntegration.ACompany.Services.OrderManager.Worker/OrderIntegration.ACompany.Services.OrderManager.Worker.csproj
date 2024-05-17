@@ -15,4 +15,8 @@
     <PackageReference Include="System.ServiceModel.NetTcp" Version="6.0.*" />
     <PackageReference Include="System.ServiceModel.Security" Version="6.0.*" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderIntegration.ACompany.Services.OrderManager.Application\OrderIntegration.ACompany.Services.OrderManager.Application.csproj" />
+  </ItemGroup>
 </Project>

@@ -12,7 +12,7 @@ namespace OrderIntegration.BCompany.DataAccess.Repositories.OrderRepositories
 
         public async Task<List<Order>> GetOrdersByDate(DateTime date)
         {
-            return await GetAllFilteredAsync(x => x.CreatedDate.Date == date, x => x.OrderItems);
+            return await GetAllFilteredAsync(x => x.CreatedDate.Date == date.Date, x => x.OrderItems);
         }
     }
 }
