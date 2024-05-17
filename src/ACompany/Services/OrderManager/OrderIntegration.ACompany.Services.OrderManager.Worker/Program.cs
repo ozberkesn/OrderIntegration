@@ -14,6 +14,7 @@ builder.Services.AddDbContextPool<OrderDBContext>(opt =>
 });
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AddOrdersListCommandHandler).Assembly));
 builder.Services.AddHostedService<DailyOrderWorker>();
+builder.Services.AddHostedService<HourlyOrderWorker>();
 
 var host = builder.Build();
 host.Run();

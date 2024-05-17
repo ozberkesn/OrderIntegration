@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using OrderIntegration.ACompany.Services.OrderManager.Application.Commands;
-using OrderIntegration.ACompany.Services.OrderManager.Application.Queries;
 using OrderReference;
 using System.ServiceModel;
 
@@ -15,7 +14,6 @@ namespace OrderIntegration.ACompany.Services.OrderManager.Worker.Workers
         {
             _logger = logger;
             _mediator = mediator;
-            GetOrders();//TEST
         }
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
