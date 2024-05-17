@@ -19,7 +19,7 @@ namespace OrderIntegration.ACompany.Services.OrderManager.Application.Handlers
         public async Task<Response<UpdatedOrderDto>> Handle(UpdateOrderCommand request, CancellationToken cancellationToken)
         {
             var order = await _context.Orders.FirstOrDefaultAsync(x => x.Id == request.OrderId);
-            if (order != null)
+            if (order?.Id != null)
             {
                 order.OrderStatusId = request.StatusId;
                 _context.Orders.Update(order);
@@ -27,7 +27,7 @@ namespace OrderIntegration.ACompany.Services.OrderManager.Application.Handlers
                 return Response<UpdatedOrderDto>.Success(new UpdatedOrderDto { Id = order.Id }, (int)HttpStatusCode.OK);
             }
 
-            return Response<UpdatedOrderDto>.Fail(new List<string> { "" }, (int)HttpStatusCode.NoContent);
+            return Response<UpdatedOrderDto>.Fail(new List<string> { "Kayıt bulunamadı" }, (int)HttpStatusCode.NoContent);
 
         }
     }
