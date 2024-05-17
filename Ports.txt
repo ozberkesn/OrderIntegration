@@ -5,4 +5,4 @@ IdentityServer=> 5001
 Gateway => 5000
 ------------BCompany-------------
 Services
-	-OrderIntegrationAPI=>  5012
+	-OrderIntegrationAPI=>  5014

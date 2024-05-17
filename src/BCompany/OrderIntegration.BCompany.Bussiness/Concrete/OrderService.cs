@@ -13,9 +13,9 @@ namespace OrderIntegration.BCompany.Bussiness.Concrete
             _orderRepository = orderRepository;
         }
 
-        public async Task<List<Order>> GetOrdersByDate()
+        public async Task<List<Order>> GetOrdersByDate(DateTime date)
         {
-            return await _orderRepository.GetAllAsync();
+            return await _orderRepository.GetOrdersByDate(date);
         }
     }
 }

@@ -3,6 +3,7 @@ using OrderIntegration.BCompany.Bussiness.Abstract;
 using OrderIntegration.BCompany.Bussiness.Concrete;
 using OrderIntegration.BCompany.DataAccess.Context;
 using OrderIntegration.BCompany.DataAccess.Repositories.OrderRepositories;
+using SoapCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddDbContext<BCompanyDbContext>(options =>
 
 builder.Services.AddScoped<IOrderRepository, EfOrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderSoapService, OrderSoapService>();
+builder.Services.AddSoapCore();
+
 
 var app = builder.Build();
 
@@ -25,8 +29,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
-
 app.MapControllers();
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.UseSoapEndpoint<IOrderSoapService>("/Orders.asmx", new SoapEncoderOptions(), SoapSerializer.XmlSerializer);
+});
+
 
 app.Run();

@@ -23,8 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderManager", "OrderManager", "{C739EB1C-89C4-49CB-A88D-C80E83FB2F70}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderIntegration", "OrderIntegration", "{6940A6BC-0F55-4611-AD49-77562927814C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.Services.OrderManager.API", "src\ACompany\Services\OrderManager\OrderIntegration.ACompany.Services.OrderManager.API\OrderIntegration.ACompany.Services.OrderManager.API.csproj", "{4C6F260A-791B-4227-9826-60B5B90DA80F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.Services.OrderManager.Application", "src\ACompany\Services\OrderManager\OrderIntegration.ACompany.Services.OrderManager.Application\OrderIntegration.ACompany.Services.OrderManager.Application.csproj", "{FECB5759-4347-4E2A-B03E-C49754CD7CAB}"
@@ -35,8 +33,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.Services.OrderManager.Infrastructure", "src\ACompany\Services\OrderManager\OrderIntegration.ACompany.Services.OrderManager.Infrastructure\OrderIntegration.ACompany.Services.OrderManager.Infrastructure.csproj", "{0B9EDD28-B989-4CFA-9081-36A451BC2436}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.Services.OrderIntegration.Worker", "src\ACompany\Services\OrderIntegration\OrderIntegration.ACompany.Services.OrderIntegration.Worker\OrderIntegration.ACompany.Services.OrderIntegration.Worker.csproj", "{7F5FA56A-1E9B-4F44-9B09-A6D35299511F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.Shared", "src\ACompany\Shared\OrderIntegration.ACompany.Shared\OrderIntegration.ACompany.Shared.csproj", "{07DE5D25-A76E-4A81-AC03-03CA0EB5EB72}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{D1ED1166-C157-48EF-B48B-40E197E1A5E8}"
@@ -44,13 +40,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		Ports.txt = Ports.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderIntegration.BCompany.API", "src\BCompany\OrderIntegration.BCompany.API\OrderIntegration.BCompany.API.csproj", "{405F4C7D-F4CF-4263-B61A-8848236657C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.BCompany.API", "src\BCompany\OrderIntegration.BCompany.API\OrderIntegration.BCompany.API.csproj", "{405F4C7D-F4CF-4263-B61A-8848236657C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderIntegration.BCompany.Bussiness", "src\BCompany\OrderIntegration.BCompany.Bussiness\OrderIntegration.BCompany.Bussiness.csproj", "{DE2E20AC-32E9-487C-ADA8-E3D9D350E8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.BCompany.Bussiness", "src\BCompany\OrderIntegration.BCompany.Bussiness\OrderIntegration.BCompany.Bussiness.csproj", "{DE2E20AC-32E9-487C-ADA8-E3D9D350E8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderIntegration.BCompany.DataAccess", "src\BCompany\OrderIntegration.BCompany.DataAccess\OrderIntegration.BCompany.DataAccess.csproj", "{31CBCA99-4B07-4CC5-83C3-ABA6E80933AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.BCompany.DataAccess", "src\BCompany\OrderIntegration.BCompany.DataAccess\OrderIntegration.BCompany.DataAccess.csproj", "{31CBCA99-4B07-4CC5-83C3-ABA6E80933AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderIntegration.BCompany.Entities", "src\BCompany\OrderIntegration.BCompany.Entities\OrderIntegration.BCompany.Entities.csproj", "{EB37BE8F-B6E6-4AB9-A8D5-275E59BF4257}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.BCompany.Entities", "src\BCompany\OrderIntegration.BCompany.Entities\OrderIntegration.BCompany.Entities.csproj", "{EB37BE8F-B6E6-4AB9-A8D5-275E59BF4257}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderIntegration.ACompany.Services.OrderManager.Worker", "src\ACompany\Services\OrderManager\OrderIntegration.ACompany.Services.OrderManager.Worker\OrderIntegration.ACompany.Services.OrderManager.Worker.csproj", "{1ED1B372-1343-4D73-A87B-EA79CFEC33A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,10 +84,6 @@ Global
 		{0B9EDD28-B989-4CFA-9081-36A451BC2436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B9EDD28-B989-4CFA-9081-36A451BC2436}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B9EDD28-B989-4CFA-9081-36A451BC2436}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F5FA56A-1E9B-4F44-9B09-A6D35299511F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F5FA56A-1E9B-4F44-9B09-A6D35299511F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F5FA56A-1E9B-4F44-9B09-A6D35299511F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F5FA56A-1E9B-4F44-9B09-A6D35299511F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07DE5D25-A76E-4A81-AC03-03CA0EB5EB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{07DE5D25-A76E-4A81-AC03-03CA0EB5EB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DE5D25-A76E-4A81-AC03-03CA0EB5EB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -110,6 +104,10 @@ Global
 		{EB37BE8F-B6E6-4AB9-A8D5-275E59BF4257}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB37BE8F-B6E6-4AB9-A8D5-275E59BF4257}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB37BE8F-B6E6-4AB9-A8D5-275E59BF4257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED1B372-1343-4D73-A87B-EA79CFEC33A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED1B372-1343-4D73-A87B-EA79CFEC33A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED1B372-1343-4D73-A87B-EA79CFEC33A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED1B372-1343-4D73-A87B-EA79CFEC33A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,19 +122,18 @@ Global
 		{2ADEC219-C721-424C-B299-E426EC8C6C58} = {9D502FB9-8FA1-462C-A924-0522AD20C73B}
 		{69A3AF38-98D4-4F70-BC96-1629471FEF3D} = {51323EFA-E014-443F-B411-C511E55F04A6}
 		{C739EB1C-89C4-49CB-A88D-C80E83FB2F70} = {9DF68BDF-5062-4E77-AE29-E8B221753107}
-		{6940A6BC-0F55-4611-AD49-77562927814C} = {9DF68BDF-5062-4E77-AE29-E8B221753107}
 		{4C6F260A-791B-4227-9826-60B5B90DA80F} = {C739EB1C-89C4-49CB-A88D-C80E83FB2F70}
 		{FECB5759-4347-4E2A-B03E-C49754CD7CAB} = {C739EB1C-89C4-49CB-A88D-C80E83FB2F70}
 		{2C99EA81-ABAD-40E0-9B70-21229431BE8E} = {C739EB1C-89C4-49CB-A88D-C80E83FB2F70}
 		{8D1D9839-731C-480D-A894-BB0752194A90} = {C739EB1C-89C4-49CB-A88D-C80E83FB2F70}
 		{0B9EDD28-B989-4CFA-9081-36A451BC2436} = {C739EB1C-89C4-49CB-A88D-C80E83FB2F70}
-		{7F5FA56A-1E9B-4F44-9B09-A6D35299511F} = {6940A6BC-0F55-4611-AD49-77562927814C}
 		{07DE5D25-A76E-4A81-AC03-03CA0EB5EB72} = {A8C208B4-3BDB-4CA4-9B19-0B3B15139062}
 		{D1ED1166-C157-48EF-B48B-40E197E1A5E8} = {D62B03BD-B91D-49D4-AE56-B3F99EE9B057}
 		{405F4C7D-F4CF-4263-B61A-8848236657C2} = {D8566F95-C55E-461B-8885-3B8FB2F4E102}
 		{DE2E20AC-32E9-487C-ADA8-E3D9D350E8CD} = {D8566F95-C55E-461B-8885-3B8FB2F4E102}
 		{31CBCA99-4B07-4CC5-83C3-ABA6E80933AB} = {D8566F95-C55E-461B-8885-3B8FB2F4E102}
 		{EB37BE8F-B6E6-4AB9-A8D5-275E59BF4257} = {D8566F95-C55E-461B-8885-3B8FB2F4E102}
+		{1ED1B372-1343-4D73-A87B-EA79CFEC33A5} = {C739EB1C-89C4-49CB-A88D-C80E83FB2F70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E380E10-FEB0-426C-A381-3210EF35AE6A}

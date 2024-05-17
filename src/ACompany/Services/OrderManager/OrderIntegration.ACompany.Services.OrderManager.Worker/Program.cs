@@ -1,4 +1,4 @@
-using OrderIntegration.ACompany.Services.OrderIntegration.Worker;
+using OrderIntegration.ACompany.Services.OrderManager.Worker;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHostedService<Worker>();
