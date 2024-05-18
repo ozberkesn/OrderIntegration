@@ -1,6 +1,6 @@
 # OrderIntegration
 
-OrderIntegration, farklý mimari yaklaþýmlarla geliþtirilmiþ iki ayrý yönetim sistemini entegre etmeyi amaçlayan bir projedir. Bu çözümde, modern mikro servis mimarisi ile geleneksel n-katmanlý mimari bir arada kullanýlmýþtýr.
+OrderIntegration, farklý mimari yaklaþýmlarla geliþtirilmiþ iki ayrý yönetim sistemini entegre etmeyi amaçlayan bir projedir. Bu çözümde, modern mikro servis mimarisi ile geleneksel n-katmanlý mimari bir arada kullanýlmýþtýr. Daha detaylý bilgi için docs klasörüne göz atýnýz.
 
 ## A Þirketi Sistemi (Mikro Servis Mimarisi)
 
@@ -37,13 +37,13 @@ A Þirketi ve B Þirketi sistemleri arasýndaki entegrasyon, A Þirketi sistemindeki
 ## Çalýþtýrma ve Geliþtirme
 
 1. Projeyi klonlayýn: `git clone https://github.com/ozberkesn/OrderIntegration.git`
-2. Gerekli baðýmlýlýklarý yükleyin (`dotnet restore`)
+2. Gerekli baðýmlýlýklarý yükleyin `dotnet restore`
 3. Veritabanlarýný yapýlandýrýn ve gerekli baðlantý bilgilerini ayarlayýn.
 4. Uygulamalarý çalýþtýrýn.
-(`dotnet run --project OrderIntegration.ACompany.Gateways.WebGateway &`)
-(`dotnet run --project OrderIntegration.ACompany.Services.OrderManager.Worker &`)
-(`dotnet run --project OrderIntegration.ACompany.Services.OrderManager.API &`)
-(`dotnet run --project OrderIntegration.ACompany.Web &`)
-(`dotnet run --project OrderIntegration.ACompany.IdentityServer &`)
-(`dotnet run --project OrderIntegration.BCompany.API &`)
+* **(`dotnet run --project OrderIntegration.ACompany.Gateways.WebGateway &`)**
+* **(`dotnet run --project OrderIntegration.ACompany.Services.OrderManager.Worker &`)**
+* **(`dotnet run --project OrderIntegration.ACompany.Services.OrderManager.API &`)**
+* **(`dotnet run --project OrderIntegration.ACompany.Web &`)**
+* **(`dotnet run --project OrderIntegration.ACompany.IdentityServer &`)**
+* **(`dotnet run --project OrderIntegration.BCompany.API &`)**
 
